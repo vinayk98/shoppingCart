@@ -11,7 +11,7 @@ const Product = ({ item, decrement }) => {
         className="cartBtn"
         onClick={() => {
           if (item.quantity > 0) {
-            decrement(item.quantity - 1, item.id, item.name);
+            decrement(item.quantity - 1, item.id, item.name, item.price);
           }
           //   console.log(item.id);
         }}
